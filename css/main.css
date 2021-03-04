@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background: #000;
+    color: white;
+    padding: 20px;
+}
+
+a{
+    color: #fff;
+}
+a:hover{
+    color: #48D0B8;
+    border-bottom: 2px solid #48D0B8; 
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 100px;
+    height: 50px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.bienvenida{
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(2,auto-fit);
+    grid-template-areas: "texto     imagen";
+    justify-content: center;
+    align-items: center;
+}
+.bienvenida__logo{
+    grid-area: imagen;
+}
+.bienvenida__texto{
+    grid-area: texto;
+    color: #fff;
+    text-align: center;
+    padding-left: 100px;
+}
+.bienvenida__texto h3{
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.bienvenida__texto p {
+    font-size: 20px;
+}
+
+.button_vermas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.ver__mas{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.ver__mas:hover{
+    color: #F1A231;
+    border: 2px solid #F1A231;
+}
+
+.quienes{
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "quienesv  quienesn"
+                          "verde     naranja";
+    color: #fff;
+    text-align: center;
+    
+                    
+}
+.quienes hr{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 18px;
+    top: 47.125rem;
+    margin-top: 1.25rem;
+    width: 14.75rem;
+    height: 0.2188rem;
+    border: none;
+    background: linear-gradient(90deg, rgba(241,162,49,1) 0%, rgba(72,208,184,1) 100%);
+}
+.quienes__titulo{
+    grid-area: quienesv;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 18px;
+    margin-top: 20px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    word-spacing: 10px;
+}
+
+.quienes__parrafo{
+    background-color: #48D0B8;
+    grid-area: verde;
+    display: inline-block;
+    width: 50%;
+    height: 637px;
+    text-align: center;
+    font-size: 24px;
+    padding: 250px 100px;
+}
+
+.quienes__img{
+    background-color: #F1A231;
+    grid-area: naranja;
+    display: inline-block;
+    width: 50%;
+    float: right;
+    height: 637px;
+
+}
+
+.quienes__img > img{
+    margin-left: 120px;
+}
+
+.clientes{
+    padding-top: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.clientes h3{
+    display: inline-block;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #F1A231;
+    margin-bottom: 30px;
+}
+
+.clientes__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img1 img2 img3";
+}
+
+.clientes__grid div{
+    margin: auto;
+}
+.clientes__grid img{
+    border-radius: 100px;
+}
+
+.contacto{
+    padding-top: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.contacto h3{
+    display: inline-block;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #F1A231;
+    margin-bottom: 30px;
+}
