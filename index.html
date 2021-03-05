@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="/css/main.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-    <title>ABTec - Desarrollo de Software</title>
+    <title>ABTEC Studio - Desarrollo web/software</title>
     <script src="https://kit.fontawesome.com/e01352df93.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
+    
+</head>
+
+<body>
         <nav class="navbar">
             <img class="brand" src="/images/LOGO_TRANSPARENTE 1.png" alt="logo">
             <ul class="nav__ul">
                 <li class="header__inicio header__li"><a href="index.html" class="header_"><i class="fas fa-home"></i> INICIO</a></li>
-                <li class="header__clientes"><a href="#clientes"><i class="fas fa-user-friends"></i> CLIENTES</a></li>
                 <li class="header__quienes"><a href="#quienes"><i class="fas fa-question-circle"></i> QUIENES SOMOS</a></li>
+                <li class="header__clientes"><a href="#clientes"><i class="fas fa-user-friends"></i> CLIENTES</a></li> 
                 <li class="header__contacto"><A href="#contacto"><i class="fas fa-id-badge"></i> CONTACTO</A></li>
             </ul>
         </nav>
+        <div class="container">
         <section class="bienvenida">
-            <article class="bienvenida__texto">
-                <h3>Bienvenido</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Dolorem laborum esse eaque autem asperiores est officiis ea soluta quo fuga eum ut, 
-                reiciendis itaque molestias! Ducimus voluptas aspernatur corporis sit!</p>
-            </article>
+            <div class="bienvenida__texto">
+                <h3>BIENVENIDO/A</h3>
+                <p>En ABTEC Studio brindamos servicio de diseño web, tiendas online y software para tu emprendimiento o negocio.
+                    Tenemos lo necesario para que tu negocio crezca.
+                    Contactanos y mirá las promociones que tenemos para vos!
+                </p>
+                </div>
             <div class="bienvenida__logo">
-                <img src="/images/LOGO_TRANSPARENTE 2.png" alt="">
+                <img src="/images/LOGO_TRANSPARENTE 2.png" alt="logo">
             </div>
+        </div>
         </section>
         <div class="button_vermas"><a href="#quienes" class="ver__mas">VER MÁS <li class="fas fa-angle-double-down"></li></a></div>
         <section class="quienes" id="quienes">
@@ -47,19 +52,32 @@
             </div>
             </div>
         </section>
-        <section class="clientes">
+        <section class="clientes" id="clientes">
             <h3>CLIENTES</h3>
             <div class="clientes__grid">
-                    <div><img src="https://picsum.photos/200"></div>
-                    <div><img src="https://picsum.photos/200"></div>
-                    <div><img src="https://picsum.photos/200"></div>
+                    <div class="image-container">
+                        <img src="images/client1.jpg">
+                        <div class="overlay_text">App administradora de turnos</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/client2.jpg">
+                        <div class="overlay_text">Carta de postres online</div>
+                    </div>
             </div>
         </section>
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h3>CONTACTO</h3>
             <br>
-            <li><i class="fab fa-instagram"></i>@abtec.studio</li>
+            <a href="https://www.instagram.com/abtec.studio/" target="_blank"><li><i class="fab fa-instagram"></i> abtec.studio</li></a>
+            <a href="https://www.facebook.com/ABTEC-Studio-101624008662873" target="_blank"><li><i class="fab fa-facebook-f"></i> abtec.studio</li></a>
+            <a href="#"><li><i class="fab fa-whatsapp"></i> +549353299999</li></a>
+            
         </section>
+
+        <section class="tarjetas">
+            <img src="images/mediosdepago.png" alt="medios de pago">
+        </section>
+        <script src="//code.jivosite.com/widget/QJ09cypZOA" async></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="js/main.js"></script>
   </body>

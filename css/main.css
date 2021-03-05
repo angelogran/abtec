@@ -10,6 +10,7 @@ body{
     background: #000;
     color: white;
     padding: 20px;
+    margin: auto;
 }
 
 a{
@@ -67,6 +68,7 @@ a:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+    animation: fadeInDown 4s infinite;
 }
 
 .ver__mas{
@@ -160,8 +162,8 @@ a:hover{
 
 .clientes__grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img1 img2";
 }
 
 .clientes__grid div{
@@ -171,10 +173,32 @@ a:hover{
     border-radius: 100px;
 }
 
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.image-container .overlay_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    display: none;
+    color: #FFF;
+    padding: 20px;
+}
+.image-container:hover .overlay_text {
+    padding-top: 80px;
+    display: block;
+    background: rgba(0, 0, 0, .9);
+}
+
 .contacto{
     padding-top: 40px;
     margin: auto;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .contacto h3{
@@ -183,4 +207,48 @@ a:hover{
     padding-bottom: 10px;
     border-bottom: 3px solid #F1A231;
     margin-bottom: 30px;
+}
+.contacto li{
+    display: table-caption;
+    font-size: 20px;
+    padding: 5px;
+}
+.contacto a:hover{
+    text-decoration: none;
+}
+
+.tarjetas img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px){
+    body{
+        padding: 0;
+        margin: auto;
+    }
+    .navbar{
+        
+    }
+    .container{
+        margin: auto;
+        text-align: center;
+    }
+    .bienvenida{
+        display: flex;
+        align-content:inherit;
+    }
+
+    .bienvenida img{
+        width: 100%;
+    }
+
+    .quienes{
+        grid-template-columns: 1fr;
+    }
+    .quienes__img{
+        display: none;
+    }
 }
