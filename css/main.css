@@ -9,7 +9,6 @@
 body{
     background: #000;
     color: white;
-    padding: 20px;
     margin: auto;
 }
 
@@ -20,6 +19,9 @@ a:hover{
     color: #48D0B8;
     border-bottom: 2px solid #48D0B8; 
     
+}
+.container{
+    padding: 20px;
 }
 
 .navbar {
@@ -129,7 +131,7 @@ a:hover{
     height: 637px;
     text-align: center;
     font-size: 24px;
-    padding: 250px 100px;
+    padding: 150px 100px;
 }
 
 .quienes__img{
@@ -142,8 +144,9 @@ a:hover{
 
 }
 
-.quienes__img > img{
-    margin-left: 120px;
+.quienes__img img{
+    margin-top: 80px;
+    width: 500px;
 }
 
 .clientes{
@@ -223,32 +226,75 @@ a:hover{
     margin: auto;
 }
 
+footer svg{
+    margin-bottom: -350px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 500px){
     body{
         padding: 0;
         margin: auto;
     }
-    .navbar{
-        
-    }
+
     .container{
-        margin: auto;
-        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar ul{
+        display: none;
     }
     .bienvenida{
-        display: flex;
-        align-content:inherit;
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagen"
+                             "texto";
+        
     }
-
+    .bienvenida__logo{
+        margin: auto;
+        width: 300px;
+        padding-left: 0;
+        padding-right: 20px;
+    }
     .bienvenida img{
+        margin: auto;
         width: 100%;
     }
-
+    .bienvenida__texto{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        
+    }
+    .button_vermas{
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
     .quienes{
         grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-template-areas: "verde"
+                            "naranja";
+    }
+    .quienes__parrafo{
+        width: 100%;
+        padding: 100px 11px 0px;
+        height: 500px;
     }
     .quienes__img{
-        display: none;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .quienes img{
+        width: 100%;
+    }
+    .quienes hr{
+        top: 50.125rem;
+        background: #F1A231;
+    }
+    .tarjetas img{
+        width: 100%;
+
     }
 }
