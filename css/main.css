@@ -231,19 +231,17 @@ footer svg{
 }
 
 /* RESPONSIVE */
-@media (max-width: 500px){
+
+@media (max-width: 928px){
     body{
         padding: 0;
         margin: auto;
     }
-
     .container{
         width: 100%;
         padding: 0;
     }
-    .navbar ul{
-        display: none;
-    }
+
     .bienvenida{
         grid-template-columns: 1fr;
         grid-template-areas: "imagen"
@@ -264,7 +262,7 @@ footer svg{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0;
+        padding: 30px;
         
     }
     .button_vermas{
@@ -286,15 +284,42 @@ footer svg{
         width: 100%;
         margin-bottom: 80px;
     }
+    .quienes__titulo{
+        border-bottom: 3px solid #F1A231;
+        margin-bottom: 30px;
+        right: 0;
+    }
     .quienes img{
-        width: 100%;
+        width: 500px;
     }
     .quienes hr{
-        top: 50.125rem;
-        background: #F1A231;
+        display: none;
     }
     .tarjetas img{
         width: 100%;
+    }
+}
 
+
+@media (max-width: 500px){
+    .navbar ul{
+        display: none;
+    }
+
+    .quienes img{
+        width: 100%;
+    }
+    .quienes__img{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 432px){
+    .clientes__grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: "img1"
+                             "img2";
+        gap: 30px;
     }
 }
